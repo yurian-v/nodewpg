@@ -1,0 +1,10 @@
+const firstname = "Yuriy";
+const lastname = "Varchuk";
+const characters = firstname.length;
+const characters2 = lastname.length;
+const chardiff = characters2 - characters;
+const charcompar = characters >= characters2;
+console.log("My name is", firstname, "and it is", characters, "characters long");
+console.log("My name is", lastname, "and it is", characters2, "characters long");
+console.log("The character difference between my first name and last name is:", chardiff);
+console.log("My first name is longer than my last name:", charcompar);

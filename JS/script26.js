@@ -1,0 +1,18 @@
+let name = "Winnipeg";
+let bigcity;
+let population = 800000;
+let jetshome = true;
+let capital = false;
+let likeswinter = null;
+console.log('City Name', name);
+console.log('This is a big city', bigcity);
+console.log('Population', population);
+console.log('Is a home of Winnipeg Jets', jetshome);
+console.log('Capital City of Canada', capital);
+console.log('Everybody likes the winter time', likeswinter);
+console.log('City Name', typeof name);
+console.log('This is a big city', typeof bigcity);
+console.log('Population', typeof population);
+console.log('Is a home of Winnipeg Jets', typeof jetshome);
+console.log('Capital City of Canada', typeof capital);
+console.log('Everybody likes the winter time', typeof likeswinter);

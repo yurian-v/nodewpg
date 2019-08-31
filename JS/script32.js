@@ -1,0 +1,20 @@
+const width = 4;
+const height = 10;
+const result1 = 2 * (width + height);
+const result2 = width * height;
+const template1 = `2-nd way: Perimetr = 2 x (${width} + ${height}) = ${result1}`;
+const template2 = `2-nd way: Area = ${width} x ${height} = ${result2}`;
+console.log("The Formula is: Perimetr = 2 x (W + H)");
+console.log("where: W  is the width or base of the rectangle and H is the height of the rectangle(in our case are 4 and 10)");
+console.log("1-st way: Perimetr = 2 x (" + width + " + " + height + ") = " + result1);
+console.log(template1);
+console.log("The Formula is: Area = W x H");
+console.log("where: W  is the width or base of the rectangle and H is the height of the rectangle(in our case are 4 and 10)");
+console.log("1-st way: Area = " + width + " x " + height + " = " + result2);
+console.log(template2);
+console.log(' --4-- ');
+console.log('|     |');
+console.log('10   10');
+console.log('|     |');
+console.log(' --4-- ');
+

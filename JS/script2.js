@@ -1,0 +1,10 @@
+var firstname;
+var lastname;
+var age;
+var address;
+var datebirth;
+name = "Yuriy";
+lastname = "Varchuk";
+age = 39;
+address = "123 Main Str";
+datebirth = "mm/dd/yyyy";

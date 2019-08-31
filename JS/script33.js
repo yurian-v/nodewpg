@@ -1,0 +1,14 @@
+let usercount = 100;
+usercount++;
+usercount++;
+usercount++;
+usercount++;
+usercount++;
+console.log("usercount is: " + usercount);
+usercount-=3;
+console.log("usercount is: " + usercount);
+usercount*=2;
+console.log("usercount is: " + usercount);
+usercount/=2;
+console.log("mencount is: " + usercount);
+console.log("womencount is: " + usercount);

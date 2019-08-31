@@ -1,0 +1,10 @@
+var firstname = "Yuriy";
+var lastname = "Varchuk";
+var age = 39;
+var address = "123 Main Str";
+var datebirth = "mm/dd/yyyy";
+console.log('firstname: ', firstname);
+console.log('lastname: ', lastname);
+console.log('age: ', age);
+console.log('address: ', address);
+console.log('datebirth: ', datebirth);
