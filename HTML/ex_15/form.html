@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Create User</title>
+</head>
+<body>
+    <h2>Create User</h2>
+    <hr>
+    <form action="create_a_user.html" method="POST" enctype="multipart/form-data">
+        <hr>
+        <input type="text" name="username" pattern="^[a-zA-Z]+$ id="name" value="" placeholder="letters only" required>
+        <label for="name">&nbsp;Input your name here</label><br>
+        <br>
+        <input type="text" name="password" pattern="\d+" id="pass" value="" placeholder="numbers only" required>
+        <label for="pass">&nbsp;Input your password here</label>
+    <hr>
+    <p>Select your favorite movie</p>
+    <p><select>
+        <option disabled>Select your favorite movie</option>
+        <option value="deadpool">Deadpool</option>
+        <option value="batman_vs_superman">Batman vs Superman</option>
+        <option value="value: civil_war">Captain America: Civil War</option>
+        <option value="doctor_strange">Doctor Strange</option>
+        <option value="suicide_squad">Suicide Squad</option>
+        <option value="apocalypse">X-Men: Apocalypse</option>
+        <option value="gotg_vol2">Guardians of the Galaxy Vol 2</option>
+        <option value="justice_league">Justice League</option>
+        <option value="logan">Logan</option>
+        <option value="homecoming">Spider-Man: Homecoming</option>
+        <option value="wonder_woman" selected>Wonder Woman</option>
+        <option value="thor_ragnarok">Thor: Ragnarok</option>
+        <option value="black_panther">Black Panther </option>
+    </select></p>
+    <textarea name="about" cols="10" rows="2" placeholder="about yourself"></textarea><br>
+    <br>
+    <input type="file" name="filename" multiple/>&nbsp;Upload your file<br>
+    <br>
+    <input type="date" name="birthday"/>
+    <input id="date" type="date" value="1980-04-02"><br>
+    <br>
+    <input type="email" name="email" id="email" value="" placeholder="email_address" required>
+    <label for="email">&nbsp;Input your email address</label><br>
+    <br>
+    <input type="url" name="url" id="url" value="" placeholder="web_site">
+    <label for="url">&nbsp;personal web site</label><br>
+    <br>
+    <input type="submit" value="Send">
+    </form>
+    <form action="form.html" method="GET" enctype="application/x-www-form-urlencoded">
+    <hr>
+        <button value="clear_form" name="clear">Clear Form</button><br>
+        <br>
+        <button value="new_user" name="new_user">Add new User</button>
+    </form>
+    <form action="https://www.google.ca/search" method="GET" enctype="application/x-www-form-urlencoded">
+        <hr>
+        <input type="search" name="query" id="query" value="" placeholder="search in Google">
+        <label for="query">What are you looking for?</label><br>
+        <br>
+        <input type="submit" value="Search">
+    </form>
+    </body>
+    </html>
