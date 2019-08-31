@@ -1,0 +1,196 @@
+        body
+        {background-color: rgb(0, 0, 0);
+      font-family: Arial, Helvetica, sans-serif}
+        a 
+        {text-decoration: none}
+        p 
+        {text-align: center;
+        color: yellow;}
+        h2 
+        {text-align: center; text-shadow: 0px 0px 1px yellow}
+        div 
+        {text-align: center}
+        .slide 
+        {text-align: center}
+        .top a 
+        {margin: 0px 20px;
+        border-width: 100px;
+        border-right: 1px solid yellow;
+        padding-right: 30px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-style: normal;
+        font-weight: bold}
+        a:hover 
+        {color: yellow;
+        text-decoration: underline;
+        font-weight: bold}
+        a.active 
+        {
+                color: yellow;
+        }
+        a:last-child 
+        {border-right: none}
+        #slider {
+                background: #000;
+                /*border: 1px solid yellow;*/
+                /*box-shadow: 5px 1px 5px rgba(0,0,0,0.7);*/
+                height: 335px;
+                width: 1024px;
+                margin: 40px auto 0;
+                overflow: visible;
+                position: relative;
+                text-align: center;
+
+             }
+             #mask {
+                overflow: hidden;
+                height: 335px;
+                /*width: 1024px;*/
+             }
+             #slider ul {
+                margin: 0;
+                padding-right: 1px;
+                position: relative;
+             }
+             
+             #slider li {
+                width: 1024px;  /* image width */
+                height: 335px; /* image height */
+                position: absolute;
+                top: -335px;	/* position  (out of slider) */
+                list-style: none;
+             }
+             #slider li.firstanimation {
+               animation: cycle 40s linear infinite;
+            }
+            
+            #slider li.secondanimation {
+               animation: cycletwo 40s linear infinite;
+            }
+            
+            #slider li.thirdanimation {
+               animation: cyclethree 40s linear infinite;
+            }
+            
+            #slider li.fourthanimation {
+               animation: cyclefour 40s linear infinite;
+            }
+            
+            #slider li.fifthanimation {
+               animation: cyclefive 40s linear infinite;
+            }
+            #slider li.sixthanimation {
+               animation: cyclesix 40s linear infinite;
+            }
+            
+            #slider li.seventhanimation {
+               animation: cycleseven 40s linear infinite;
+            }
+            
+            #slider li.eighthanimation {
+               animation: cycleeight 40s linear infinite;
+            }
+            @keyframes cycle {
+               0%  { top: 0px; } /* image is visible */
+               2.5%  { top: 0px; } /* start position */
+               10% { top: 0px; opacity:1; z-index:0; } /* from 2.5% to 10 % (3 sek) image is visible */
+               12.5% { top: 335px; opacity: 0; z-index: 0; } /* from 10% to 12.5% (1 sec)moving out*/
+               13% { top: -335px; opacity: 0; z-index: -1; } /* position out of mask */
+               95% { top: -335px; opacity: 0; z-index: 0; }
+               97.5% { top: -335px; opacity: 0; } /* from 97.5% to 100% (1 sec) – moving in */
+               100%{ top: 0px; opacity: 1; }
+            }
+            
+            @keyframes cycletwo {
+               0%  { top: -335px; opacity: 0; } /* position out of mask */
+               10% { top: -335px; opacity: 0; }/* start moving from 10% */
+               12.5% { top: 0px; opacity: 1; }
+               15% { top: 0px; opacity: 1; }  /* from 12.5% to 15% ( during 1 sec) — in*/
+               22.5% { top: 0px; opacity: 1; z-index: 0; }   /* from 15% to 22.5 % (3 sec) image is visible */
+               25% { top: 335px; opacity: 0; z-index: 0; } /* from 22.5% to 25% (1 sec)— moving out */
+               25.5% { top: -335px; opacity: 0; z-index: -1; }   /* out of the mask */
+               100%{ top: -335px; opacity: 0; z-index: -1; }
+            }
+            
+            @keyframes cyclethree {
+               0%  { top: -335px; opacity: 0; }
+               22.5% { top: -335px; opacity: 0; }
+               25% { top: 0px; opacity: 1; }
+               27.5% { top: 0px; opacity: 1; }
+               35% { top: 0px; opacity: 1; }
+               37.5% { top: 335px; opacity: 0; z-index: 0; }
+               38% { top: -335px; opacity: 0; z-index: -1; }
+               100%{ top: -335px; opacity: 0; z-index: -1; }
+            }
+            
+            @keyframes cyclefour {
+               0%  { top: -335px; opacity: 0; }
+               35% { top: -335px; opacity: 0; }
+               37.5% { top: 0px; opacity: 1; }
+               45% { top: 0px; opacity: 1; }
+               47.5% { top: 0px; opacity: 1; z-index: 0; }
+               50% { top: 335px; opacity: 0; z-index: 0; }
+               51% { top: -335px; opacity: 0; z-index: -1; }
+               100%{ top: -335px; opacity: 0; z-index: -1; }
+            }
+            @keyframes cyclefive {
+               0%  { top: -335px; opacity: 0; }
+               47.5% { top: -335px; opacity: 0; }
+               50% { top: 0px; opacity: 1; }
+               57.5% { top: 0px; opacity: 1; }
+               60% { top: 0px; opacity: 1; z-index: 0; }
+               62.5% { top: 335px; opacity: 0; z-index: 0; }
+               63% { top: -335px; opacity: 0; z-index: -1; }
+               100%{ top: -335px; opacity: 0; z-index: -1; }
+            }
+            @keyframes cyclesix {
+               0%  { top: -335px; opacity: 0; }
+               60% { top: -335px; opacity: 0; }
+               62.5% { top: 0px; opacity: 1; }
+               70% { top: 0px; opacity: 1; }
+               72.5% { top: 0px; opacity: 1; z-index: 0; }
+               75% { top: 335px; opacity: 0; z-index: 0; }
+               75.5% { top: -335px; opacity: 0; z-index: -1; }
+               100%{ top: -335px; opacity: 0; z-index: -1; }
+            }
+            @keyframes cycleseven {
+               0%  { top: -335px; opacity: 0; }
+               72.5% { top: -335px; opacity: 0; }
+               75% { top: 0px; opacity: 1; }
+               82.5% { top: 0px; opacity: 1; }
+               85% { top: 0px; opacity: 1; z-index: 0; }
+               87.5% { top: 335px; opacity: 0; z-index: 0; }
+               88% { top: -335px; opacity: 0; z-index: -1; }
+               100%{ top: -335px; opacity: 0; z-index: -1; }
+            }
+            @keyframes cycleeight {
+               0%  { top: -325px; opacity: 0; }
+               85% { top: -325px; opacity: 0; }
+               87.5% { top: 0px; opacity: 1; }
+               95% { top: 0px; opacity: 1; }
+               97.5% { top: 0px; opacity: 1; z-index: 0; }
+               100%{ top: 325px; opacity: 0; z-index: 0; }
+            }
+            .progress-bar {
+               position: relative;
+               top: -5px;
+               width: 1024px;
+               height: 5px;
+               background: black;
+               animation: fullexpand 40s ease-out infinite;
+            }
+            @keyframes fullexpand {
+               /* static */
+               0%, 12.5%, 25%, 37.5%, 50%, 62.5%, 75%, 87.5%, 100% { width: 0%; opacity: 0; }
+            
+               /* start */
+               2.5%, 15%, 27.5%, 40%, 52.5%, 65%, 77.5%, 90% { width: 0%; opacity: 0.3; }
+            
+               /* moving */
+               10%, 22.5%, 35%, 47.5%, 60%, 72.5%, 85%, 97.5% { width: 100%; opacity: 0.7; }
+            
+               /* finish */
+               10.5%, 23%, 35.5%, 48%, 60.5%, 73%, 85.5%, 98% { width: 100%; opacity: 0.3; }
+            
+               /* stop start */
+               11%, 23.5%, 36%, 48.5%, 61%, 73.5%, 86%, 98.5% { width: 100%; opacity: 0; }
