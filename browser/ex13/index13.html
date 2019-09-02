@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            Ex13
+        </title>
+        <style>
+            #num {
+    color: red;
+  }
+        </style>
+        </head>
+        <body> 
+        <span id = "num"></span>
+        seconds left
+<script>
+let start = window.prompt('Please, input the number of seconds that he would like to stay in our site');
+		document.getElementById("num").innerHTML = start;
+		setInterval(function(){ 
+            start--;
+            if (start === -1) {
+    window.alert("Your session has expired, come again soon!")
+    }
+			document.getElementById("num").innerHTML = start;
+    }, 1000)</script>
+        </body>
+</html>

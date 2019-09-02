@@ -1,10 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <script src="script12.js"></script>
-    <title>Exersize 12</title>
-</head>
-<body>
-    
-</body>
+    <head>
+        <title>
+            Ex12
+        </title>
+        <style>
+            #num {
+    color: #0000ff;
+  }
+        </style>
+        </head>
+        <body>
+            You spent here 
+        <span id = "num"></span>
+        seconds
+<script>
+var start = 0;
+		document.getElementById("num").innerHTML = "0" + start;
+		setInterval(function(){ 
+			start++;
+			document.getElementById("num").innerHTML = start;
+    }, 1000)</script>
+        </body>
 </html>

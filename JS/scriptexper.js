@@ -68,3 +68,22 @@ console.log( items ); // выводим в консоль результат с�
   {name: "Миша", age: 23},
   {name: "Вася", age: 44},
   {name: "Рома", age: 99}]
+
+  <p id="rocket"></p>
+        <script>
+        timedInfo(); // вызов функции, обязателен, иначе не сработает
+        function timedInfo() {
+            setTimeout(one, 1000)
+              setTimeout(two, 3000)
+              setTimeout(three, 5000)
+          }
+        function one() {
+            document.getElementById("rocket").innerHTML = "Установить связь с центром!";
+        }
+        function two() {
+            document.getElementById("rocket").innerHTML = "Пристегнуть ремни!";
+        }
+        function three() {
+            document.getElementById("rocket").innerHTML = "Контрольная проверка связи!";
+        }
+        </script> 
