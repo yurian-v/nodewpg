@@ -3,6 +3,15 @@ window.onload = function() {
     const children = ul.children;
     const firstChild = children[0];
     firstChild.setAttribute('class','orange');
+    const thirdChild = children[2];
+    thirdChild.setAttribute('class','orange');
+    thirdChild.nextElementSibling.setAttribute('class','orange');
+    thirdChild.previousElementSibling.setAttribute('class','orange');
+    const lastChild = children[4];
+    lastChild.setAttribute('class','orange');
+    thirdChild.setAttribute('class','red');
+    firstChild.setAttribute('class','green');
+
 
     //const foursChild = children[3];
     //foursChild.setAttribute('class','red');
