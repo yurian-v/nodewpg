@@ -1,0 +1,10 @@
+.bold {
+    font-weight: bold;
+  }
+  
+  .striked {
+    text-decoration: line-through;
+  }
+  .purple {
+      color: purple
+  }

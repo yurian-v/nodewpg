@@ -3,7 +3,7 @@ window.onload;
       const alla = document.querySelectorAll('a');
       const allul = document.querySelectorAll('ul');
       const blueClasses = document.querySelectorAll('.blue');
-      console.log('ImportnatId',importnatId);
+      console.log('ImportnatId',importantId);
       console.log('all a elements',alla);
       console.log('all ul elements',allul);
       console.log('blueClasses',blueClasses);
